@@ -1,6 +1,6 @@
 {
   "name": "nest-module-cli",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A powerful CLI tool to generate NestJS modules with customizable templates",
   "main": "generate.js",
   "bin": {
