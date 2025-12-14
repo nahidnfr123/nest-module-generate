@@ -1,4 +1,4 @@
-# NestJS Module Generator
+# Nest Module CLI
 
 A powerful CLI tool to generate NestJS modules with customizable templates for modules, controllers, services, DTOs, and schemas.
 
@@ -16,13 +16,13 @@ A powerful CLI tool to generate NestJS modules with customizable templates for m
 ### Global Installation (Recommended)
 
 ```bash
-npm install -g nestjs-module-generator
+npm install -g nest-module-cli
 ```
 
 ### Local Installation
 
 ```bash
-npm install --save-dev nestjs-module-generator
+npm install --save-dev nest-module-cli
 ```
 
 ## Usage
@@ -32,7 +32,7 @@ npm install --save-dev nestjs-module-generator
 First, initialize the templates directory:
 
 ```bash
-nest-generate init
+nest-module init
 ```
 
 This creates a `templates/` folder with default stub files for:
@@ -48,13 +48,13 @@ This creates a `templates/` folder with default stub files for:
 Generate a single module:
 
 ```bash
-nest-generate generate users
+nest-module generate users
 ```
 
 Generate multiple modules:
 
 ```bash
-nest-generate generate users products orders
+nest-module generate users products orders
 ```
 
 ### Batch Generation
@@ -62,7 +62,7 @@ nest-generate generate users products orders
 Generate all modules defined in your config:
 
 ```bash
-nest-generate batch
+nest-module batch
 ```
 
 ### Using npm Scripts
@@ -72,9 +72,9 @@ Add to your `package.json`:
 ```json
 {
   "scripts": {
-    "generate": "nest-generate generate",
-    "generate:init": "nest-generate init",
-    "generate:batch": "nest-generate batch"
+    "generate": "nest-module generate",
+    "generate:init": "nest-module init",
+    "generate:batch": "nest-module batch"
   }
 }
 ```
@@ -184,4 +184,4 @@ Your Name
 
 ## Support
 
-For issues and questions, please visit [GitHub Issues](https://github.com/yourusername/nestjs-module-generator/issues)
+For issues and questions, please visit [GitHub Issues](https://github.com/yourusername/nest-module-cli/issues)
