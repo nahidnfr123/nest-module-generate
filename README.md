@@ -93,7 +93,7 @@ Create a `generator.config.js` file in your project root:
 ```javascript
 module.exports = {
   templatesDir: './templates',
-  outputDir: './src/modules',
+  outputDir: './src/app',
   
   templates: {
     module: { extension: 'module.ts', required: true },
@@ -125,10 +125,11 @@ module.exports = {
     schema: ['auth', 'sidebar']
   },
   
+  // Optional: Generate modules in batches
   batchModules: [
-    'users',
-    'products',
-    'orders'
+    // 'users',
+    // 'products',
+    // 'orders'
   ]
 };
 ```
