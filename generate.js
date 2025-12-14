@@ -1,4 +1,6 @@
-#!/usr/bin/env node
+// generate.js
+
+// #!/usr/bin/env node
 
 const fs = require('fs');
 const path = require('path');
